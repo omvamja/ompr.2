@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+
+
+ float bill,a,b,c,d;
+ clrscr();
+
+ printf("enter total unit consum");
+ scanf("%f",&bill);
+
+ a=bill*0.50+100;
+ b=25+(bill-50)*1.20+100;
+ c=25+75+(bill-150)*1.20+100;
+ d=25+75+120+(bill-250)*1.50+100;
+ if(bill<=50)
+ {	printf("electricity bill=rs.%f",a);
+
+ }else if(bill<=150){
+ printf("electriy bill=rs.%f",b);
+ }else if(bill<=250){
+ printf("electricuty bill=rs%f",c);
+ }else{
+ printf("electricity bill=rs.%f",d);
+	  }
+
+
+ getch();}
